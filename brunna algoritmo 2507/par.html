@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>parimpar</h3>
+        <input type="number" placeholder="digite sua nota1" id="nota1">
+        <p></p>
+        <input type="number" placeholder="digite sua nota2" id="nota2">
+        <p></p>
+        <input type="submit" onclick="parimpar(); return false;">
+    </form>
+    <p id="parimpar"></p>
+    <script>
+        function parimpar (){
+            let num = parseInt(prompt("digite um numero"))
+            if (num % 2 ==0){
+                window.alert ("numero par")
+            } else{
+                window.alert ("numero impar")
+            }
+            parimpar()
+        }
+    </script>
+</body>
+</html>

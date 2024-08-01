@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h3>Nascimento</h3>
+      <input type="Nascimento" placeholder="digite sua data de nascimento" id="niver">
+      <h3>Ano Atual</h3>
+      <input type="AnoAtual" placeholder="digite Ano Atual" id="atual">
+      <p></p>
+      <input type="submit" onclick="Idade(); return false;" >
+      </form>
+
+<script>
+            function Idade() {
+            var Nascimento = document.getElementById('niver').value;
+            var AnoAtual = document.getElementById('atual').value;
+            var Idade = atual - niver;
+            alert ("sua idade e:" + idade); }
+            
+</script>
+</body>
+</html>

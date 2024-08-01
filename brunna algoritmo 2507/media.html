@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form> 
+        <h3>media</h3>
+        <input type="number" placeholder="digite sua nota1" id="nota1">
+        <p></p>
+        <input type="number" placeholder="digite sua nota2" id="nota2">
+        <p></p>
+        <input type="submit" onclick="media(); return false;">
+    </form>
+    <p id="media"></p>
+    <script>
+        function media () {
+            var nota1 = parseFloat(document.getElementById('nota1').value);
+            var nota2 = parseFloat(document.getElementById('nota2').value);
+            var media = (nota1 + nota2)/2;
+            document.getElementById('media').innerHTML = "sua media e:" + media;
+            location.href = "https://github.com/"
+        }
+    </script>
+</body>
+</html>
